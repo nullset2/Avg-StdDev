@@ -15,13 +15,6 @@ numbers = gets.split(" ").map!(&:to_f)
 if numbers.size == 0
   exit
 else
-  #show input
-  print "Numeros:"
-
-  numbers.each do |i|
-    print " #{i}"
-  end
-
   #perform calculations
   avg = average(numbers)
   stdev = stdDev(numbers, avg)
